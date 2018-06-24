@@ -1,4 +1,4 @@
-#!/bin/zsh
+##!/bin/zsh
 
 #Completion
 autoload -U compinit
@@ -15,13 +15,15 @@ zstyle ':completion:*' rehash true
 autoload -U promptinit
 promptinit
 prompt gentoo
-
+export EDITOR="emacs -nw"
+export TERM=xterm-256color
 # Aliases
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
+alias emacs='emacs -nw'
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/usr/.zshrc'
